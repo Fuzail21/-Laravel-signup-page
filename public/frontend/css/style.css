@@ -1,0 +1,166 @@
+/* SIGNUP AND LOGO FORM */
+
+
+body {
+  background-image: linear-gradient(140deg, white, #358135, #093d09);
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* background-size: cover; */
+}
+
+.main {
+  height: 100vh;
+  background-color: transparent;
+}
+
+.link {
+  text-decoration: none;
+  color: green;
+  font-weight: 500;
+}
+
+.signup-box {
+  background-color: #ffffff;
+  padding: 25px;
+  height: 482px;
+}
+
+.sub {
+  background-color: #093d09;
+  color: #ffffff;
+  border: #093d09 solid;
+  padding: 8px;
+}
+
+.sub:hover {
+  color: white;
+  background-color: #0d470d;
+}
+
+#subb {
+  margin-top: 25px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.349);
+  border-radius: 0;
+  transition: border-color 0.5s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-bottom-color: green;
+  box-shadow: none;
+}
+
+.img-box {
+  position: absolute;
+  z-index: 1;
+  height: 482px;
+  left: 50%;
+  filter: brightness(35%);
+  transition: left 0.8s;
+}
+
+.img-box.left {
+  left: 16%;
+}
+
+/* SIGNUP AND LOGO FORM */
+
+
+
+/* TODO LIST */
+
+.editbtn{
+    background: #ffffff;
+
+    border-radius: 24px;
+    font-family: Arial;
+    color: #3db030;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    border: solid #3db030 2px;
+    text-decoration: none;
+}
+.deletebtn{
+    background: #ffffff;
+    border-radius: 24px;
+    font-family: Arial;
+    color: #e31010;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    border: solid #e31010 2px;
+    text-decoration: none;
+}
+.edit:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+.delete:hover{
+    background-color: #e31010;
+    color: whitesmoke;
+}
+li{
+    margin: 6px;
+}
+
+
+/* TODO LIST */
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+  .signup-box {
+    width: auto;
+  }
+
+  .img-box {
+    width: 330px;
+  }
+
+  .img-box.left {
+    left: 14%;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .signup-box {
+    width: auto;
+  }
+
+  .img-box {
+    width: 330px;
+  }
+
+  .img-box.left {
+    left: 11%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .img-box {
+    display: none;
+  }
+
+  .signup-box {
+    position: absolute;
+    top: 120px;
+    width: auto;
+    max-width: auto;
+  }
+
+  .ss {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 841px) {
+  .show-signup {
+    display: block !important;
+  }
+}
